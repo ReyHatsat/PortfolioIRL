@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#carousel-container {
+    position: relative;
+}
+
+.card-container {
+    display: flex;
+}
+
+.card {
+    background: linear-gradient(145deg, #B4B4B4, #EAEAEA);
+    border-radius: 20px;
+    box-shadow: 2.1px 2.1px 7px #B3B4B7, -2.1px -2.1px 7px #FFFFFF;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background-color: #ffffff;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.left-section, .right-section {
+    flex: 1;
+}
+
+.left-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#prev-btn,
+#next-btn {
+    position: absolute;
+    top: 16rem;
+    height: 3rem;
+    width: 3rem;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    box-shadow: transparent;
+    padding: 0;
+    background: linear-gradient(145deg, #B4B4B4, #EAEAEA);
+    cursor: pointer;
+    z-index: 10;
+}
+
+#prev-btn {
+    left: -3%;
+}
+
+#next-btn {
+    right: -3%;
+}
+
+#descriptionCard{
+    padding-bottom: 10%;
+}
+
+#githublinkCard{
+    position: absolute;
+    bottom: 3%;
+}
+
+#githublinkCard img{
+    width: 50%;
+}
+
+#wipCard{
+    font-size: 25px;
+    position: absolute;
+    bottom: -3%;
+    right: 3%;
+}
+
+@media (max-width: 640px){
+    .card{
+     flex-direction: column;
+     height: auto;
+    }   
+}
